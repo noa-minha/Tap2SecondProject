@@ -26,10 +26,11 @@
 
     <section>
         <h1 class="text-white"> Any questions?</h1>
-            <div class="flex flex-col items-start w-1/2"> 
+            <div class="flex flex-col items-start w-2xl"> 
                 {#each questions as question, i}
-                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-white m-3">
+                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-[#878787] m-3 flex flex-row justify-between">
                         {question}
+                        <ChevronDown/>
                     </button>   
                     {#if questionsShow[i] === true}
                     <div class="text-white m-3 ml-7">{defaultAnswer}</div>
@@ -40,6 +41,14 @@
 
     <section>
         <h1 class="text-white"> Message Us!</h1>
-
+        <input type="text" placeholder="Your Name*" 
+        class="text-white"/>
+        <input type="text" placeholder="Email Address*" 
+        class="text-white"/>
+        <input type="text" placeholder="Reason" 
+        class="text-white"/>
+        <input type="text" placeholder="Leave your message" 
+        class="text-white"/>
     </section>
+
 </main>
