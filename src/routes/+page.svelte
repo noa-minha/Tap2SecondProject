@@ -1,4 +1,7 @@
 <script lang="ts">
+
+    import { ChevronDown } from 'lucide-svelte';
+
     let questions =[
         "What hardware do I need to run Tap2?", 
         "Can I use Tap2 on my existing devices?", 
@@ -23,13 +26,20 @@
 
     <section>
         <h1 class="text-white"> Any questions?</h1>
-            <div class="flex flex-col items-start"> 
+            <div class="flex flex-col items-start w-1/2"> 
                 {#each questions as question, i}
-                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-white m-3">{question}</button>   
+                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-white m-3">
+                        {question}
+                    </button>   
                     {#if questionsShow[i] === true}
-                    <div class="text-white">{defaultAnswer}</div>
+                    <div class="text-white m-3 ml-7">{defaultAnswer}</div>
                     {/if}
                 {/each}
             </div>
+    </section>
+
+    <section>
+        <h1 class="text-white"> Message Us!</h1>
+
     </section>
 </main>
