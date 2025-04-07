@@ -22,10 +22,10 @@
 
 </script>
 
-<main class="min-h-screen bg-[#110D0A]">
+<main class="min-h-screen bg-[#110D0A] flex md:flex-row flex-col justify-center">
 
-    <section>
-        <h1 class="text-white font-semi-bold font-inter"> Any questions?</h1>
+    <section class="">
+        <h1 class="text-white font-semibold m-3 text-l"> Any questions?</h1>
             <div class="flex flex-col items-start w-2xl"> 
                 {#each questions as question, i}
                     <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-[#878787] m-3 flex flex-row justify-between">
@@ -39,17 +39,17 @@
             </div>
     </section>
 
-    <section class="bg-[#14100E] md:w-lg flex flex-col rounded-2xl items-end pr-4">
-        <h1 class="text-white font-semibold m-6 text-xl"> Message Us!</h1>
+    <section class="bg-[#14100E] h-96 flex flex-col rounded-2xl items-end pr-4 aspect-square">
+        <h1 class="text-white font-semibold m-6 text-l"> Message Us!</h1>
         <input type="text" placeholder="Your Name*" 
-        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
+        class="text-white bg-[#1B1715] mb-2 w-3/4 h-10 p-3 rounded-xl text-xs"/>
         <input type="text" placeholder="Email Address*" 
-        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
+        class="text-white bg-[#1B1715] mb-2 w-3/4 h-10 p-3 rounded-xl text-xs"/>
         <input type="text" placeholder="Reason" 
-        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
+        class="text-white bg-[#1B1715] mb-2 w-3/4 h-10 p-3 rounded-xl text-xs"/>
         <input type="text" placeholder="Leave your message" 
-        class="text-white bg-[#1B1715] mb-4 w-2/3 h-40 p-3 rounded-xl"/>
-        <button class="bg-[#0358f1] text-white flex flex-row p-3 rounded-xl"> <ArrowRight class="mr-2"/> Send</button>
+        class="text-white bg-[#1B1715] mb-2 w-3/4 h-24 p-3 rounded-xl text-xs"/>
+        <button class="bg-[#0358f1] text-white text-xs flex flex-row p-3 rounded-xl"> <ArrowRight class="mr-2 w-4 h-4"/> Send</button>
     </section>
 
 </main>
