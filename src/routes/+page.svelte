@@ -22,7 +22,7 @@
 
 </script>
 
-<main class="min-h-screen bg-black">
+<main class="min-h-screen bg-[#110D0A]">
 
     <section>
         <h1 class="text-white"> Any questions?</h1>
@@ -39,16 +39,17 @@
             </div>
     </section>
 
-    <section>
+    <section class="bg-[#14100E]">
         <h1 class="text-white"> Message Us!</h1>
         <input type="text" placeholder="Your Name*" 
-        class="text-white"/>
+        class="text-white bg-[#1B1715]"/>
         <input type="text" placeholder="Email Address*" 
-        class="text-white"/>
+        class="text-white bg-[#1B1715]"/>
         <input type="text" placeholder="Reason" 
-        class="text-white"/>
+        class="text-white bg-[#1B1715]"/>
         <input type="text" placeholder="Leave your message" 
-        class="text-white"/>
+        class="text-white bg-[#1B1715]"/>
+        <button class="bg-[#0358f1] text-white">Send</button>
     </section>
 
 </main>
