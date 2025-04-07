@@ -25,7 +25,7 @@
 <main class="min-h-screen bg-[#110D0A]">
 
     <section>
-        <h1 class="text-white"> Any questions?</h1>
+        <h1 class="text-white font-semi-bold font-inter"> Any questions?</h1>
             <div class="flex flex-col items-start w-2xl"> 
                 {#each questions as question, i}
                     <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-[#878787] m-3 flex flex-row justify-between">
@@ -39,16 +39,16 @@
             </div>
     </section>
 
-    <section class="bg-[#14100E]">
+    <section class="bg-[#14100E] md:w-2xl flex flex-col rounded-2xl">
         <h1 class="text-white"> Message Us!</h1>
         <input type="text" placeholder="Your Name*" 
-        class="text-white bg-[#1B1715]"/>
+        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
         <input type="text" placeholder="Email Address*" 
-        class="text-white bg-[#1B1715]"/>
+        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
         <input type="text" placeholder="Reason" 
-        class="text-white bg-[#1B1715]"/>
+        class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
         <input type="text" placeholder="Leave your message" 
-        class="text-white bg-[#1B1715]"/>
+        class="text-white bg-[#1B1715] mb-4 w-2/3 h-40 p-3 rounded-xl"/>
         <button class="bg-[#0358f1] text-white">Send</button>
     </section>
 
