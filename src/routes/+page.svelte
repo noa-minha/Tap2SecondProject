@@ -24,8 +24,11 @@
     <section>
         <h1 class="text-white"> Any questions?</h1>
             <div class="flex flex-col items-start"> 
-                {#each questions as question}
-                <button class="text-white m-3">{question}</button>   
+                {#each questions as question, i}
+                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-white m-3">{question}</button>   
+                    {#if questionsShow[i] === true}
+                    <div class="text-white">{defaultAnswer}</div>
+                    {/if}
                 {/each}
             </div>
     </section>
