@@ -1,3 +1,32 @@
-<h1 class="text-3xl bg-amber-300 font-bold underline">
-  Hello world!
-</h1><p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+    let questions =[
+        "What hardware do I need to run Tap2?", 
+        "Can I use Tap2 on my existing devices?", 
+        "Does Tap2 support multi playment methods?", 
+        "Can Tap2 handle multiple locations?", 
+        "Can Tap2 be used for online orders and deliveries?", 
+        "Is there a minimum contract period with Tap2?"
+    ]
+
+    let questionsShow = Array.from({ length: 6 }, () => false)
+
+    let defaultAnswer = "Yes, but also no. Because while the answer appears obvious at first glance, "+
+    "it's only through questioning the premise that we realize the distinction itself might be false."+
+    " In some contexts, it's entirely true — but only if you're willing to let go of what truth meant before"+
+    " you asked. And even then, there is a part that remains unknowable, but not because it cannot be known — rather, "+
+    "because knowing it would change the question itself. So, in the end, maybe... but only if you understand that"+
+    " 'end' is just another beginning."
+
+</script>
+
+<main class="min-h-screen bg-black">
+
+    <section>
+        <h1 class="text-white"> Any questions?</h1>
+            <div class="flex flex-col items-start"> 
+                {#each questions as question}
+                <button class="text-white m-3">{question}</button>   
+                {/each}
+            </div>
+    </section>
+</main>
