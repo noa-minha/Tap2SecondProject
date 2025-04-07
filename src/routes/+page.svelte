@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import { ChevronDown } from 'lucide-svelte';
+    import { ChevronDown, ArrowRight} from 'lucide-svelte';
 
     let questions =[
         "What hardware do I need to run Tap2?", 
@@ -39,8 +39,8 @@
             </div>
     </section>
 
-    <section class="bg-[#14100E] md:w-2xl flex flex-col rounded-2xl">
-        <h1 class="text-white"> Message Us!</h1>
+    <section class="bg-[#14100E] md:w-lg flex flex-col rounded-2xl items-end pr-4">
+        <h1 class="text-white font-semibold m-6 text-xl"> Message Us!</h1>
         <input type="text" placeholder="Your Name*" 
         class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
         <input type="text" placeholder="Email Address*" 
@@ -49,7 +49,7 @@
         class="text-white bg-[#1B1715] mb-4 w-2/3 h-14 p-3 rounded-xl"/>
         <input type="text" placeholder="Leave your message" 
         class="text-white bg-[#1B1715] mb-4 w-2/3 h-40 p-3 rounded-xl"/>
-        <button class="bg-[#0358f1] text-white">Send</button>
+        <button class="bg-[#0358f1] text-white flex flex-row p-3 rounded-xl"> <ArrowRight class="mr-2"/> Send</button>
     </section>
 
 </main>
