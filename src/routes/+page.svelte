@@ -22,7 +22,8 @@
 
 </script>
 
-<main class="min-h-screen bg-[#110D0A] flex lg:flex-row flex-col justify-center lg:items-start items-center lg:p-10 w-full">
+
+<main class="min-h-screen bg-[#110D0A] flex lg:flex-row flex-col justify-center lg:items-start items-center lg:p-10 w-full font-inter">
 
     <section class="order-2 lg:order-1 mb-14 lg:w-lg w-4/5">
         <h1 class="text-white font-semibold m-3 text-l"> Any questions?</h1>
