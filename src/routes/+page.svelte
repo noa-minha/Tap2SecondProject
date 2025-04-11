@@ -22,14 +22,14 @@
 
 </script>
 
-<main class="min-h-screen bg-[#110D0A] flex lg:flex-row flex-col justify-center lg:p-10 p-20">
+<main class="min-h-screen bg-[#110D0A] flex lg:flex-row flex-col justify-center lg:items-start items-center lg:p-10 w-full">
 
-    <section class="order-2 lg:order-1 mb-10 ">
+    <section class="order-2 lg:order-1 mb-14 lg:w-lg w-4/5">
         <h1 class="text-white font-semibold m-3 text-l"> Any questions?</h1>
-            <div class="flex flex-col items-start w-2xl"> 
+            <div class="flex flex-col items-start w-full"> 
                 {#each questions as question, i}
-                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-[#878787] m-4 flex flex-row justify-between items-center lg:w-lg w-sm">
-                        <p>{question}</p>
+                    <button on:click={() => questionsShow[i] = !questionsShow[i]} class="text-[#878787] m-4 flex flex-row justify-between items-center w-full pr-4">
+                        <p class="whitespace-normal break-words text-left">{question}</p>
                         <ChevronDown class="ml-auto" />
                     </button>   
                     {#if questionsShow[i] === true}
@@ -39,7 +39,7 @@
             </div>
     </section>
 
-    <section class="bg-[#14100E] h-96 md:w-96 w-lg flex flex-col rounded-2xl items-end pr-4 aspect-square order-1 lg:order-2">
+    <section class="h-96 lg:w-lg w-4/5 flex flex-col rounded-2xl items-end pr-4 aspect-square order-1 lg:order-2 bg-[#14100E]">
         <h1 class="text-white font-semibold m-6 text-l"> Message Us!</h1>
         <input type="text" placeholder="Your Name*" 
         class="text-white bg-[#1B1715] mb-2 md:w-3/4 w-full h-10 p-3 rounded-xl text-xs"/>
