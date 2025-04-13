@@ -1,16 +1,17 @@
 module.exports = {
   content: [
-    './src/**/*.{html,js,svelte}', // Add Svelte files here
-    './node_modules/tailwindcss/**/*.js' // Include tailwind paths if necessary
+    './src/**/*.{html,js,svelte}', 
+    './node_modules/tailwindcss/**/*.js'
   ],
+  darkMode: 'class', 
   theme: {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
       fontWeight: {
-        'extra-light': 100,  
-        'semi-bold': 600,    
+        'extra-light': 100,
+        'semi-bold': 600,
       }
     }
   },
